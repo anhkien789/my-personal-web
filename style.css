@@ -1,0 +1,171 @@
+/* 
+font-family: 'Libre Baskerville', serif;
+font-family: 'REM', sans-serif; 
+
+Colour Pallet:
+
+#52734D
+#91C788
+#DDFFBC
+#FEFFDE
+
+*/
+
+/* Header Section */
+#header {
+  background-color: #91c788;
+  height: 100vh;
+}
+
+#header > .container > div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.mountain_img {
+  width: 100%;
+  height: 40%;
+}
+
+.mountain_img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.road_img {
+  height: 30%;
+  width: auto;
+}
+
+.road_img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: "Libre Baskerville", serif;
+  color: #52734d;
+}
+h2 {
+  font-family: "REM", sans-serif;
+  color: #52734d;
+  font-size: 3rem;
+}
+
+/* Instruction Section */
+
+.profile_image > img {
+  border: 10px solid #91c788;
+  border-radius: 50%;
+}
+
+p {
+  color: #52734d;
+  font-size: 1.5rem;
+  font-family: "REM", sans-serif;
+  font-weight: 200;
+}
+
+.dot {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.dot div {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #52734d;
+}
+
+/* Skills Section */
+#skills > .container > div div {
+  display: flex;
+}
+
+#skills > .container > div div > p {
+  margin: 0 3rem;
+}
+
+/* Contact Section */
+#contact a {
+  background-color: #52734d;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "REM", sans-serif;
+  text-transform: uppercase;
+}
+
+#contact a:hover {
+  background-color: #91c788;
+}
+
+/* Footer Section */
+#footer {
+  background-color: #91c788;
+}
+
+#footer > .container > div > div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#footer > .container > div > div a {
+  color: #52734d;
+  font-weight: bold;
+}
+
+#footer > .container > div > div a:hover {
+  color: #52734d90;
+}
+
+#footer > .container > div > div > small {
+  color: #ddffbc;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 992px) {
+  /* Skills Section */
+  #skills > .container > div div {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  #skills > .container > div div > p {
+    margin: 3rem 1rem 0 1rem;
+  }
+
+  #skills > .container > div > .dot {
+    flex-direction: row;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 4rem;
+    font-family: "Libre Baskerville", serif;
+    color: #52734d;
+  }
+  h2 {
+    font-family: "REM", sans-serif;
+    color: #52734d;
+    font-size: 2rem;
+  }
+  p {
+    color: #52734d;
+    font-size: 1rem;
+    font-family: "REM", sans-serif;
+    font-weight: 200;
+  }
+}
